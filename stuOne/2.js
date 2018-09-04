@@ -99,6 +99,7 @@ for (let s in o){
 // friends
 // grade
 // dream
+// 遍历属性的保险做法
 
 /*------------------------- for in 遍历数组  -------------------------------------- */
 //Array也是对象，也可以用for...in   遍历
@@ -160,7 +161,7 @@ c3.delete('3');
 console.log(c3);//Set { 1, 2, 3, 4 }
 
 c3.delete('3');
-console.log(c3);//Set { 1, 2, 3, 4 }
+console.log(c3);//Set { 1, 2, 3, 4 } //不会报错
 
 
 
@@ -242,8 +243,9 @@ e1.forEach(function (element ,index ,Array) {
 //[键，值]
 
 e2.forEach(function (value, key, Map) {
-    console.log(value);//1 2 3
-    console.log(key);//a b c
+   
+     console.log(value);//1 2 3
+    console.log(key);//a b c 
     console.log(Map);//Map { 'a' => 1, 'b' => 2, 'c' => 3 }
 });
 

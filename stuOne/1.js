@@ -21,7 +21,7 @@ let c3 =`hello, ${c1}, ${c2}`;
 let c4 =`hello${c1}${c2}`;
 console.log(c2);
 console.log( c1 + c2 );
-console.log('hello ' + 'beauty ');
+console.log('hello' + 'beauty ');
 console.log(c3);           //字符串可有点意思
 console.log(c4);
 
@@ -92,6 +92,8 @@ let f4 = arr.slice(3);//[4,'a','b','Hello']   从索引3开始到结束,包括3
 console.log(f3);
 console.log(f4);
 
+console.log(Array(30).fill('-').join(''));
+console.log(arr);
 //数组中push()向array末尾增加元素，pop删除最后一个元素
 let f6 = arr.push(1,2);
 console.log(arr);
@@ -99,12 +101,12 @@ let f7 = arr.pop()
 console.log(arr);      //空数组的pop不会报错，只会返回undefined
 
 //shift和unshift   unshift向头部增加元素，shift删除第一个元素
-let f8 = arr.unshift('1','2');
+let f8 = arr.unshift(1,'2');
 console.log(arr);
 let f9 = arr.shift()
 console.log(arr);
 //sort 自动对数组进行排序
-arr.sort();
+arr.sort(); // sort 的规律很傻的....
 console.log(arr);        
 //reverse
 arr.reverse();
@@ -114,6 +116,7 @@ console.log(arr);
 //我认为索引是从1开始数数的
 
 //数组的万能公式 splice 
+console.log(Array(30).fill('-').join(''));
  arr = ['Microsoft', 'Apple', 'Yahoo', 'AOL', 'Excite', 'Oracle'];    //同一个变量不能用arr反复赋值
 arr.splice(2,3,'a','b');//[ 'Microsoft', 'Apple', 'a', 'b', 'Oracle' ]
 console.log(arr);  //从第二个索引开始删除3个元素，再添加'a','b'

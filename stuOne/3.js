@@ -1,10 +1,9 @@
 /*
 第二天的js学习
+*/
 
+// instanceof 的用法
 
-
-
- */
 
 const date1 = new Date();
 const date2 = Date();
